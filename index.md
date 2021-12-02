@@ -42,7 +42,7 @@ Link to website utilized: (https://docs.docker.com/compose/install/#install-usin
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Note: Can test successful installation by typing “docker-compose –version”*
 
 #### Setup Wireguard 
-Link to website utilized: (https://thematrix.dev/setup-wireguard-vpn-server-with-docker/) \
+Link to website utilized: (https://thematrix.dev/setup-wireguard-vpn-server-with-docker/) 
 
 1.	To create the required Wireguard directories enter into the terminal: \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `mkdir -p ~/wireguard/` \
@@ -77,16 +77,13 @@ Link to website utilized: (https://thematrix.dev/setup-wireguard-vpn-server-with
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `- NET_ADMIN` \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `- SYS_MODULE` \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `sysctls:` \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `- net.ipv4.conf.all.src_valid_mark=1` \
-\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `- net.ipv4.conf.all.src_valid_mark=1` 
 4.	Change the “TZ” to “America/Chicago”
 5.	Paste the DigitalOcean server’s IPv4 address under “ServerURL”
 6.	Type “docker-compose up -d” while in the wireguard directory to build the server
 
-#### Port-Forwarding (BONUS)
-
 #### Connecting Cellphone to Wireguard
-link to website utilized: (https://thematrix.dev/setup-wireguard-vpn-server-with-docker/) \
+link to website utilized: (https://thematrix.dev/setup-wireguard-vpn-server-with-docker/) 
 
 1. Type "docker-compose logs -f wireguard" to open the config files
 2. Scan the *phone-related* peer QR code in the wireguard iOS/Android application
